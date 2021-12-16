@@ -397,11 +397,21 @@ section {
   width: 100%;
   margin-top: -2.5em;
   margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .hero h3 {
   font-family: brandon-grotesque, sans-serif;
   color: white;
   font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -350%);
+          transform: translate(-50%, -350%);
 }
 .hero p {
   margin: 1em auto;

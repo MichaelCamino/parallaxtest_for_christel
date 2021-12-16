@@ -92,12 +92,20 @@ section {
         width: 100%;
         margin-top: -2.5em;
         margin-bottom: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     h3 {
         font-family: $font-family-headline;
         color: white;
         font-weight: 400;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -350%);
     }
 
     p {
