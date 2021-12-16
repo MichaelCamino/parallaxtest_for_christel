@@ -56,19 +56,44 @@ section {
     align-items: center;
 }
 
+.section-1 {
+    position: relative;
+    z-index: 4;
+    background-color: white;
+} 
+
 /* HERO SECTION */
 
 .hero {
-    background: black;
-    min-height: 100vh;
+    
     text-align: center;
     display: grid;
     place-items: center;
     padding: 6em;
     color: white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    .front {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
     h1 {
-        margin-bottom: .25em;
+        margin-bottom: 3.9em;
+        font-family: $font-family-headline;
+        font-size: 3em;
         color: white;
+        max-height: 100vh !important;
+        width: 100%;
     }
 
     p {

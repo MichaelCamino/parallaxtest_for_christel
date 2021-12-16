@@ -361,20 +361,44 @@ section {
           align-items: center;
 }
 
+.section-1 {
+  position: relative;
+  z-index: 4;
+  background-color: white;
+}
+
 /* HERO SECTION */
 .hero {
-  background: black;
-  min-height: 100vh;
   text-align: center;
   display: -ms-grid;
   display: grid;
   place-items: center;
   padding: 6em;
   color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.hero .front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.hero .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 .hero h1 {
-  margin-bottom: 0.25em;
+  margin-bottom: 3.9em;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 3em;
   color: white;
+  max-height: 100vh !important;
+  width: 100%;
 }
 .hero p {
   margin: 1em auto;
@@ -437,7 +461,7 @@ section {
   transition: 250ms all ease-out;
   font-family: "acumin-pro", helvetica, arial;
   font-weight: 400;
-  z-index: 1;
+  z-index: 5;
 }
 .site-header .site-nav li {
   font-size: 4vw;
@@ -503,46 +527,6 @@ section {
 }
 
 /* ANIMATIONS */
-.hero .container > *,
-.hero[data-sectionstate=inactive] .container > * {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
-  opacity: 0;
-}
-.hero .container > *:nth-child(1),
-.hero[data-sectionstate=inactive] .container > *:nth-child(1) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-.hero .container > *:nth-child(2),
-.hero[data-sectionstate=inactive] .container > *:nth-child(2) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-.hero .container > *:nth-child(3),
-.hero[data-sectionstate=inactive] .container > *:nth-child(3) {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-.hero .container > *:nth-child(4),
-.hero[data-sectionstate=inactive] .container > *:nth-child(4) {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-}
-.hero .container > *:nth-child(5),
-.hero[data-sectionstate=inactive] .container > *:nth-child(5) {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-}
-.hero[data-sectionstate=active] .container > *,
-.hero[data-sectionstate=inactive][data-sectionstate=active] .container > * {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
 #section-1 .one-half:nth-child(1) {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
