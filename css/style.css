@@ -377,12 +377,10 @@ section {
   color: white;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: auto;
 }
 .hero .front {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
   z-index: 1;
 }
@@ -393,12 +391,17 @@ section {
   z-index: -1;
 }
 .hero h1 {
-  margin-bottom: 3.9em;
   font-family: brandon-grotesque, sans-serif;
   font-size: 3em;
   color: white;
-  max-height: 100vh !important;
   width: 100%;
+  margin-top: -2.5em;
+  margin-bottom: 0;
+}
+.hero h3 {
+  font-family: brandon-grotesque, sans-serif;
+  color: white;
+  font-weight: 400;
 }
 .hero p {
   margin: 1em auto;
